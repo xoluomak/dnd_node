@@ -7,6 +7,7 @@ exports.addCharacter = (req, res, next) => {
         name: req.body.name,
         sexe: req.body.sexe,
         colorIndex: req.body.colorIndex,
+        classIndex: req.body.classIndex,
         userId: req.body.userId,
         level: 1,
     });

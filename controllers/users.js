@@ -44,8 +44,6 @@ exports.login = (req, res, next) => {
                     res.status(200).json({
                         userId: user._id,
                         email: user.email,
-                        displayStyle: user.displayStyle !== undefined ? user.displayStyle : null,
-                        admin: user.admin,
                         token: jwt.sign(
                             { userId: user._id },
                             'repminder_secret_token_2l|.*8pou]X-m32r',

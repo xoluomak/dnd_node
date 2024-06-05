@@ -7,6 +7,7 @@ const characterSchema = mongoose.Schema({
   name: { type: String, required: true },
   sexe: { type: Boolean, required: true },
   colorIndex: { type: Number, required: true },
+  classIndex: { type: Number, required: true },
   level: { type: Number, required: true },
   userId: { type: Schema.Types.ObjectId, ref: 'User', required: true },
 });
